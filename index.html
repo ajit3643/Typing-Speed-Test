@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Typing Speed Test</h1>
+
+      <!-- Settings Section -->
+      <div id="settings" class="section active">
+        <label for="difficulty">Difficulty Level:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <label for="duration">Test Duration:</label>
+        <select id="duration">
+          <option value="15">15 seconds</option>
+          <option value="30">30 seconds</option>
+          <option value="60">60 seconds</option>
+        </select>
+
+        <button id="startButton" class="btn">Start Test</button>
+      </div>
+
+      <!-- Test Section -->
+      <div id="test" class="section hidden">
+        <p id="textDisplay"></p>
+        <textarea
+          id="textInput"
+          placeholder="Start typing here..."
+          disabled
+        ></textarea>
+        <div id="progressBar" class="progress-bar"></div>
+
+        <div class="stats">
+          <p>Time Left: <span id="timer">0</span>s</p>
+          <p>WPM: <span id="wpm">0</span></p>
+          <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+      </div>
+
+      <!-- Result Section -->
+      <div id="result" class="section hidden">
+        <h2 class="result-title">Test Results</h2>
+        <p>
+          Your Typing Speed:
+          <span id="finalWPM" class="result-value">0</span> WPM
+        </p>
+        <p>
+          Your Accuracy: <span id="finalAccuracy" class="result-value">0</span>%
+        </p>
+        <button id="restartButton" class="btn">Restart Test</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

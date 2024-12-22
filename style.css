@@ -1,0 +1,133 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #a8e6cf, #dcedc1);
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.section {
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.section.active {
+  display: block;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+select {
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  background: #ecf0f1;
+  color: #34495e;
+}
+
+textarea {
+  width: 96%;
+  height: 120px;
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #bdc3c7;
+  background: #f8f9fa;
+  color: #2c3e50;
+  user-select: none; /* Prevent text selection */
+}
+
+.progress-bar {
+  height: 10px;
+  width: 0%;
+  background: #1abc9c;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: width 0.5s;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.btn {
+  background: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #16a085;
+}
+
+.result-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.result-value {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* New styling for text display with borders */
+#textDisplay {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #34495e;
+  border-radius: 10px;
+  margin-top: 20px;
+  background: #ecf0f1;
+  width: 90%;
+  max-width: 600px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  word-wrap: break-word;
+}
